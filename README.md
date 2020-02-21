@@ -6,7 +6,7 @@
   - Pytorch Geometric installation or tutorial [Here](https://github.com/ksh981214/Pytorch_Geometric_Tutorial)
   
 - Preprocess
-    - Can use data,  '''from torch_geometric.datasets import Planetoid''' Data(Cora, CiteSeer, PubMed)
+    - Can use data,  ```from torch_geometric.datasets import Planetoid``` Data(Cora, CiteSeer, PubMed)
     
 - Model
 
