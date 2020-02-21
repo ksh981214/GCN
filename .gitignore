@@ -1,0 +1,5 @@
+.ipynb_checkpoints/
+.git/
+__pycache__
+data/
+Untitled.ipynb
