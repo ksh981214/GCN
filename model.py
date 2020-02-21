@@ -29,7 +29,8 @@ class GCN(nn.Module):
         
         x = self.conv1(x, edge_index)
         x = F.relu(x)
-        x = F.dropout(x, p=self.dropout_rate)
+        #x = F.dropout(x, p=self.dropout_rate) #If no drop out, accuracy 0.75 --> 0.80
         x = self.conv2(x, edge_index)
+        #x = F.dropout(x, p=self.dropout_rate) #In, https://github.com/tkipf/gcn/blob/master/gcn/models.py , there are two dropout.. But performance bad.
         
         return x  
