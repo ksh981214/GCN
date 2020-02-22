@@ -14,9 +14,7 @@ def train(model, data_loader, config):
                 return False, np.mean(losses[:-10])
             
     def show_loss_plt(x_plot, train_losses, val_losses):
-        
         now = datetime.now()
-        
         plt.plot(x_plot, train_losses)
         plt.plot(x_plot, val_losses)
         plt.xlabel('Epoch')
@@ -26,6 +24,7 @@ def train(model, data_loader, config):
         plt.show()
         
     def show_acc_plt(x_plot, train_acc_plot, val_acc_plot):
+        now = datetime.now()
         plt.plot(x_plot, train_acc_plot)
         plt.plot(x_plot, val_acc_plot)
         plt.xlabel('Epoch')
